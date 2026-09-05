@@ -50,3 +50,6 @@ on early-init && property:ro.boot.em.model=SM-A336N
 
 on boot
     restart audioserver
+
+on property:sys.boot_completed=1
+    restart audioserver
